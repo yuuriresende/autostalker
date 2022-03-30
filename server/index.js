@@ -5,6 +5,8 @@ const TOKEN = process.env.TWITTER_BEARER_TOKEN
 const rulesURL = 'https://api.twitter.com/2/tweets/search/stream/rules'
 const streamURL = 'https://api.twitter.com/2/tweets/search/stream?tweet.fields=public_metrics&expansions=author_id'
 
+// You can edit the value for what you want like tweets from some user or just using the keyword about something
+// You can change the value name to "tag : someHashtag" or both together like [{value: "from:Casimiro"}, {tag: "VASCO"}]
 const rules = [{value: "from:Casimiro"}]
 
 //Get stream rules
