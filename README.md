@@ -11,3 +11,6 @@ npm i
 ```
 npm start
 ```
+* open localhost:3000 to see the front end with tweets
+
+
