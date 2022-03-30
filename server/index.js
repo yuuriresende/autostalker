@@ -5,7 +5,7 @@ const TOKEN = process.env.TWITTER_BEARER_TOKEN
 const rulesURL = 'https://api.twitter.com/2/tweets/search/stream/rules'
 const streamURL = 'https://api.twitter.com/2/tweets/search/stream?tweet.fields=public_metrics&expansions=author_id'
 
-const rules = [{value: "from:yuraum"}]
+const rules = [{value: "from:Casimiro"}]
 
 //Get stream rules
 async function getRules(){
@@ -13,8 +13,7 @@ async function getRules(){
         headers: {
             Authorization: `Bearer ${TOKEN}`
         }
-    })
-    
+    })    
     return response.body
 }
 
@@ -79,10 +78,8 @@ function streamTweets(){
     try{
         //Get all stream rules
         currentRules = await getRules()
-
         //Delete all stream rules
         await deleteRules(currentRules)
-
         //Set rules based on array above
         await setRules()
         
