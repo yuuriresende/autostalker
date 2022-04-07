@@ -9,7 +9,7 @@ npm i
 * create a .env file with bearer token from twitter api
 * change the value in code server(server/index.js, line 8) you want receive about
 ```
-npm start
+npm run dev
 ```
 * open localhost:3000 to see the front end with tweets
 
