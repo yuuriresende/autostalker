@@ -6,7 +6,7 @@ This is a bot for twitter wich receives tweets real time about an @ or #
 ```
 npm i
 ```
-* create a .env file with bearer token from twitter api
+* cp .envexample .env and place your bearer token there
 * change the value in code server(server/index.js, line 8) you want receive about
 ```
 npm start
